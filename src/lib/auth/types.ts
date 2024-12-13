@@ -9,6 +9,7 @@ export interface AuthState {
   user: User | null;
   token: string | null;
   loading: boolean;
+  error?: string;
 }
 
 export const STORAGE_KEY = "auth_state";
